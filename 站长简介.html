@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zhanzhang</title>
+    <link type="text/css" rel="stylesheet" href="zhanzhang.css">
+    <!--样式设置-->
+    <style>
+        script {
+            color: rgb(140, 15, 15);
+        }
+    </style>
+    <!--时钟显示-->
+    <script>
+        function showTime() {
+            var time = new Date();
+            var day = time.getDay();
+            var date = time.getDate();
+            var year = time.getFullYear();
+            var month = time.getMonth() + 1;
+            var hour = time.getHours();
+            var minute = time.getMinutes();
+            var second = time.getSeconds();
+            var day1 = day.toString();
+            var nianyue = year + "年" + "&nbsp" + month + "月";
+            var mytime = hour + ":" + minute + ":" + second;
+            // document.getElementById("xinqi").innerHTML = day1;
+            document.getElementById("ri").innerHTML = date;
+            document.getElementById("nianyue").innerHTML = nianyue;
+            document.getElementById("tt").innerHTML = mytime;
+            setTimeout("showTime()", 1000);
+        }
+    </script>
+</head>
+ 
+<body>
+    <div class="header">
+        <!--头部-->
+        <img id="hi1" src="./image/nanning.jpg">
+    </div>
+ 
+    <div class="dh">
+        <!--导航栏 -->
+        <ul>
+            <li><a href="./首页.html#">首页</a></li>
+            <li><a href="./家乡简介.html#">家乡简介</a></li>
+            <li><a href="./名胜风景.html#">风景名胜</a></li>
+            <li><a href="./美食特色.html#">美食特色</a></li>
+            <li><a href="./站长简介.html#">站长简介</a></li>
+            <li><a href="./在线调查.html#">在线调查</a></li>
+        </ul>
+    </div>
+    <!--主体-->
+    <div id="zhuti">
+        <div id="left">
+            <!--主体左边-->
+            <table border="1">
+                <tr>
+                    <th>
+                        <div id="geqian"><!--个签-->
+                            <h2>
+                                <pre> 年轻是我们唯一有权利
+ 去编织梦想的时光
+ 
+               ---李嘉诚</pre>
+                            </h2>
+                        </div>
+                        <div id="shijian"><!--时间-->
+                            <div id="ri"> 24</div>
+                            <div id="nianyue">二0二四年四月</div>
+                            <div id="tt">20:57</div>
+                            <script>
+                                showTime();
+                            </script>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div id="xinxi"><!--信息-->
+                            <br>
+                            <br>
+                            <br>
+ 
+                            <p>学院：数电学院</p>
+                            <p>专业：网络工程</p>
+                            <p>班级：232班</p>
+                            <P>学号：</P>
+                            <p>联系方式：<br>邮箱：</p>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="right"><!--右边-->
+            <div id="zhan1"><!--标题-->
+                <h1>站长简介</h1>
+            </div>
+            <div id="zhan2"><!--内容-->
+                <ul>
+                    <li>姓名：黄忠晴、许日祥、蓝韦旭、周荣康、李国旺</li>
+                    <br>
+                    <li>性别：男</li>
+                    <li>家乡：南宁</li>
+                    <li>爱好：乒乓球、追剧、看书、散步、看电影
+                        <ul id="tuijian">
+                            <li>推荐的书：
+                                <ul id="shu">
+                                    <li>《堂吉诃德》</li>
+                                    <li>《百年孤独》</li>
+                                    <li>《平凡的世界》</li>
+                                </ul>
+                            </li>
+                            <li id="zong">推荐的综艺：
+                                <ul id="zongyi">
+                                    <li>令人心动的offer</li>
+                                    <li>王牌对王牌</li>
+                                    <li>极限挑战</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="qita">其他：......</li>
+                </ul>
+            </div>
+        </div>
+ 
+    </div>
+ 
+ 
+    <div id="" class="footer">
+        <!--页尾-->
+        <img id="fi1" src="./image/QQ图片20240427172727.jpg">
+        <p>
+            大美广西 荣华南宁
+        </p>
+        <p>
+            welcome to Nanning|南宁欢迎您！
+        </p>
+    </div>
+</body>
+ 
+</html>
